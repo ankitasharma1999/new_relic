@@ -9,7 +9,7 @@ resource "newrelic_alert_policy" "ank1" {
 }
 
 
-#count variavle precedence
+#count variable precedence
 resource "newrelic_alert_policy" "ank1" {
   count = var.num_alert_policies
   name = "example-${count.index + 1}"
